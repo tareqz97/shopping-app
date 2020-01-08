@@ -1,1 +1,8 @@
-<p>prodects works!</p>
+<app-header></app-header>
+<app-breadcrump></app-breadcrump>
+<div class="col">
+    <ul class="list-group col-md-6">
+        <li class="list-group-item" *ngFor="let item of prodects" routerLink="{{item.path}}">{{item.name}}</li>
+      </ul>
+</div>
+

@@ -1,16 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
 import { AuthComponent } from './auth/auth.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from "@angular/common/http";
 import { LoadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
 import { AlertComponent } from './shared/alert/alert.component';
 import { AppRoutingModule } from './app.routing-module';
-import { AdminRoutingModule } from './admin-section/admin-routing-module';
-import { AdminModule } from './admin-section/admin.module';
-import { CommonModule } from '@angular/common';
+import { BreadcrumpComponent } from './shared/breadcrump/breadcrump.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +16,6 @@ import { CommonModule } from '@angular/common';
     AlertComponent,
   ],
   imports: [
-    CommonModule,
     AppRoutingModule,
     BrowserModule,
     FormsModule,

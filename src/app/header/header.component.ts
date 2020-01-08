@@ -11,11 +11,11 @@ export class HeaderComponent implements OnInit {
   admin = [
     {
       label : "Home",
-      routerLink : ""
+      routerLink : "/admin/home"
     },
     {
       label : "Prodects",
-      routerLink: "/prodects"
+      routerLink: "/admin/prodects"
     }
   ]
   ngOnInit() {

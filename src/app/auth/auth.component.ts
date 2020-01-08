@@ -26,7 +26,7 @@ export class AuthComponent implements OnInit {
       res => {
         console.log('HTTP response', res);
         this.isLoding = false;
-        this.router.navigate(['/admin'])
+        this.router.navigate(['/admin/home'])
       },
       error => {
         console.log('HTTP Error :', this.auth.handleError(error));
